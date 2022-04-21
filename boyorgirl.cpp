@@ -1,30 +1,31 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-#define endl "\n" 
+#define endl "\n"
 
-int main(){
+int main()
+{
     string s;
-    int total=0;
+    int total = 0;
     cin >> s;
-    int count[26]={0};
+    int count[26] = {0};
     for (int i = 0; i < s.length(); i++)
     {
-            count[ s[i]-97]++;
+        count[s[i] - 97]++;
     }
     for (int i = 0; i < 26; i++)
     {
-        if (count[i] != 0 )
+        if (count[i] != 0)
         {
-           total++;
+            total++;
         }
-        
     }
-    if (total%2==0)
+    if (total % 2 == 0)
     {
-        cout << "CHAT WITH HER!"<<endl;
-    }else{
-        cout << "IGNORE HIM"<<endl;
+        cout << "CHAT WITH HER!" << endl;
     }
-    
+    else
+    {
+        cout << "IGNORE HIM!" << endl;
+    }
 }
