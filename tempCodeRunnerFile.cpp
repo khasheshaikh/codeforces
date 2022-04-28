@@ -3,28 +3,20 @@ using namespace std;
 
 int main()
 {
-    string n;
-    int ans = 0;
+    int n;
     cin >> n;
-
-    for (int i = 0; i < n.length() - 1; i++)
+    while (n--)
     {
+        int x, y, n;
+        cin >> x >> y >> n;
 
-        if (n[i] == n[i + 1])
+        for (int i = n; i > 0; i--)
         {
-            ans++;
-            if (ans == 6)
+            if (n % x == y)
             {
-                cout << "YES";
-                return 0;
+                cout << n;
+                break;
             }
         }
-        else
-        {
-            ans = 0;
-        }
     }
-
-    cout << "NO";
-    return 0;
 }

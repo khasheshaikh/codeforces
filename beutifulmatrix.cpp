@@ -1,14 +1,14 @@
 #include <iostream>
+#include <cmath>
+
 using namespace std;
 
 int main()
 {
-    int arr[5][5];
-    int x = 0;
-
-    for (int i = 0; i < 5; i++)
+    int x;
+    for (int i = 1; i <= 5; ++i)
     {
-        for (int j = 0; j < 5; j++)
+        for (int j = 1; j <= 5; ++j)
         {
             cin >> x;
             if (x == 1)
@@ -17,4 +17,5 @@ int main()
             }
         }
     }
+    return 0;
 }
