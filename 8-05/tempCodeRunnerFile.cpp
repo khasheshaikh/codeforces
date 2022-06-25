@@ -1,26 +1,10 @@
-#include <iostream>
-using namespace std;
-
-int main()
-{
-    int n, ava = 0, ans = 0;
-    int arr[n];
-    for (int i = 0; i < n; i++)
+for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        v.push_back(make_pair(arr[i], arr[i + 1]));
     }
 
+    sort(v.begin(), v.end());
     for (int i = 0; i < n; i++)
     {
-        if (ava == 0 && arr[i] < 0)
-        {
-            ans++;
-        }
-        else
-        {
-            ava = ava + arr[i];
-        }
+        cout << v[i].first << " " << v[i].second<<endl;
     }
-
-    cout << ans;
-}
